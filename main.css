@@ -74,12 +74,10 @@ img.header {
     border-style: none;
     background-color: #eae7cc;
     border: solid 0.5px #e1e1e1;
-    /* border-radius: 10px; */
     font-size: 15px;
     cursor: pointer;
     color: #505050;
     font-weight: bold;
-    /* text-transform: uppercase; */
 }
 .next-button:disabled {
   background-color: lightgray;
