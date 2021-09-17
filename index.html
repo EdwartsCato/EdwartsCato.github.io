@@ -22,10 +22,10 @@
         <div class="content">
             <a style="display:none" id="umc" href="smdm://umc.html?program=BULK_ENROLL&amp;service_type=KC" target="_self"></a>
             <a style="display:none" id="kcc" href="kcc://kcc.html?cmd=KCC_ENROLL" target="_self"></a>
-            <p>Start configuring this device. The device should be pre-registered on the Knox Configure portal.</p>
             <button id="umc-button" class="next-button align-center" onclick="installUMC()">First-time enrollment</button>
-            <p class="re-enroll">Re-enroll into Knox Configure with the latest profile configuration. The device should be configured at least once.</p>
+            <p>Start configuring this device. The device should be pre-registered on the Knox Configure portal.</p>
             <button id="kcc-button" class="next-button align-center" onclick="installKCC()">Re-enroll</button>
+            <p class="re-enroll">Re-enroll into Knox Configure with the latest profile configuration. The device should be configured at least once.</p>
         </div>
     </div>
     <div id="content-wrapper-2" style="display: none;">
@@ -40,7 +40,7 @@
 <script>
     document.getElementById("content-wrapper-2").style.display = 'none';
     var currentYear = new Date().getFullYear();
-    document.getElementById("footer-wrapper").innerHTML = "Copyright " + currentYear + " Samsung. All rights reserved.";
+    document.getElementById("footer-wrapper").innerHTML = "Copyright " + currentYear + " Cato. All rights reserved.";
     var installKCC = function() {
         document.getElementById("kcc").click();
         document.getElementById("content-wrapper-2").style.display = 'block';
